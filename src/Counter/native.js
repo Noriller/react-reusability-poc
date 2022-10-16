@@ -2,7 +2,10 @@ import { Button, Text, View } from 'react-native';
 import { useCounterLogic } from './logic';
 
 export function Counter() {
-  const { counter, text, handleIncrement, handleDecrement } = useCounterLogic('React Native');
+  const { counter, text, handleIncrement, handleDecrement } = useCounterLogic(
+    'React Native',
+    Text
+  );
 
   return (
     <View>

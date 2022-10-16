@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export function useCounterLogic(from) {
+export function useCounterLogic(from, CounterDisplay) {
   const [counter, setCounter] = useState(0);
   const [text, setText] = useState(`I'm a dumb component in ${from}`);
 
@@ -15,6 +15,9 @@ export function useCounterLogic(from) {
   const handleDecrement = () => setCounter(counter - 1);
 
   return {
-    counter, text, handleIncrement, handleDecrement
+    counter: <CounterDisplay>{counter}</CounterDisplay>,
+    text,
+    handleIncrement,
+    handleDecrement,
   };
 }

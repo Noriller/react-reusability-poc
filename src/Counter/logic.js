@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export function useAppLogic(from) {
+export function useCounterLogic(from) {
   const [counter, setCounter] = useState(0);
   const [text, setText] = useState(`I'm a dumb component in ${from}`);
 

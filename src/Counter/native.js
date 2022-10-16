@@ -1,8 +1,8 @@
 import { Button, Text, View } from 'react-native';
-import { useAppLogic } from './logic';
+import { useCounterLogic } from './logic';
 
-export function App() {
-  const { counter, text, handleIncrement, handleDecrement } = useAppLogic('React Native');
+export function Counter() {
+  const { counter, text, handleIncrement, handleDecrement } = useCounterLogic('React Native');
 
   return (
     <View>

@@ -1,7 +1,7 @@
-import { useAppLogic } from './logic';
+import { useCounterLogic } from './logic';
 
-export function App() {
-  const { counter, text, handleIncrement, handleDecrement } = useAppLogic('React Web');
+export function Counter() {
+  const { counter, text, handleIncrement, handleDecrement } = useCounterLogic('React Web');
 
   return (
     <>
